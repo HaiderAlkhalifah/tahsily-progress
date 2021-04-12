@@ -1,0 +1,24 @@
+{
+    "Total" : "Total" ,
+    "Mathematics" : "Mathematics",
+    "Chemistry" : "Chemistry",
+    "Physics" : "Physics" ,
+    "Biology": "Biology",
+     "out of" : "out of " ,
+     "pages, remained": " pages, remained ",
+    "pages":" pages",
+    "Last page" : "Last page",
+    "Error" : "Error",
+    "The last page must be between" : "The last page must be between ",
+    "and" : " and ",
+    "OK" : "OK",
+    "DONE" : "DONE",  
+    "Settings": "Settings",
+    "First Page":"First Page",
+    "Save changes": "Save changes",
+    "less than 1 Erorr": "The nunber of the page can't be less than 1",
+"than the first page Erorr": "The last page number should be bigger than the first page",
+"Settings changed successfully": "Settings changed successfully",
+"Last pageS" : "Last page"
+
+}

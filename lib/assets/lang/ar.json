@@ -1,0 +1,23 @@
+{
+    "Total" : "المجموع " ,
+    "Mathematics" : "الرياضيات",
+    "Chemistry" : "الكيمياء",
+    "Physics" : "الفيزياء" ,
+    "Biology": "الأحياء",
+     "out of" : " من أصل " ,
+     "pages, remained": " صفحات, تبقى ",
+    "pages":" صفحة",
+    "Last page" : "آخر صفحة",
+    "Error" : "خطأ",
+    "The last page must be between" : "الصفحة الأخيرة يجب أن تكون بين ",
+    "and" : " و ",
+    "OK" : "حسناً",
+    "DONE" : "حفظ",  
+    "Settings": "اللإعدادات",
+    "First Page":"الصفحة الأولى",
+    "Save changes": "حفظ التغييرات",
+    "less than 1 Erorr": "رقم الصفةلا يجب أن يكون أصغر من 1",
+"than the first page Erorr": "الصفحة الأخيرة لا يجب أن تكون أقل من الصفحة الأولى",
+"Settings changed successfully": "تم الحفظ بنجاح ",
+"Last pageS" : "الصفحة الأخيرة"
+}
