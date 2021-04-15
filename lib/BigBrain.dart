@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'dart:math';
 import 'SettingsBrain.dart';
 
 // to take the last page from the user//
