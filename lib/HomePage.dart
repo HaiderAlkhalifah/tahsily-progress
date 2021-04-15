@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tahsily_progress/Listv.dart';
 import 'Const.dart';
 import 'Reuseable.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
@@ -36,7 +35,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomPadding: false,
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Flexible(
@@ -68,11 +66,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                     MaterialPageRoute(
                                         builder: (context) => SettingsPage()))
                                 .then((value) => setState(() {}));
-                            /*
-                        Navigator.push()
-                        Navigator.pop()
-                        .thne()
-                        */
                           });
                         }),
                   ],
@@ -87,11 +80,16 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(
                 height: 22,
               ),
-              ProDet(
-                  lastPage: totalOut().toString(),
-                  pagesRemain: totalRemaind(),
-                  style: KTotalDetailsStyle,
-                  totalPages: totalTotal().toString()),
+              Row(
+                children: [
+                  ProDet(
+                    lastPage: totalOut().toString(),
+                    pagesRemain: totalRemaind(),
+                    style: KTotalDetailsStyle,
+                    totalPages: totalTotal().toString(),
+                  ),
+                ],
+              ),
               SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
@@ -186,11 +184,16 @@ class _MyHomePageState extends State<MyHomePage> {
                   tpercent: mathPercent(),
                 ),
               ),
-              ProDet(
-                  lastPage: mathOut().toString(),
-                  pagesRemain: mathRemaind(),
-                  style: KDetailsStyle,
-                  totalPages: mathTotal().toString()),
+              Row(
+                children: [
+                  ProDet(
+                    lastPage: mathOut().toString(),
+                    pagesRemain: mathRemaind(),
+                    style: KDetailsStyle,
+                    totalPages: mathTotal().toString(),
+                  ),
+                ],
+              ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
                 child: Row(
@@ -284,11 +287,16 @@ class _MyHomePageState extends State<MyHomePage> {
                   tpercent: chemPercent(),
                 ),
               ),
-              ProDet(
-                  lastPage: chemPagesOut.toString(),
-                  pagesRemain: chemRemaind(),
-                  style: KDetailsStyle,
-                  totalPages: chemTotal().toString()),
+              Row(
+                children: [
+                  ProDet(
+                    lastPage: chemPagesOut.toString(),
+                    pagesRemain: chemRemaind(),
+                    style: KDetailsStyle,
+                    totalPages: chemTotal().toString(),
+                  ),
+                ],
+              ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
                 child: Row(
@@ -382,11 +390,16 @@ class _MyHomePageState extends State<MyHomePage> {
                   tpercent: physPercent(),
                 ),
               ),
-              ProDet(
-                  lastPage: physPagesOut.toString(),
-                  pagesRemain: physRemaind(),
-                  style: KDetailsStyle,
-                  totalPages: physTotal().toString()),
+              Row(
+                children: [
+                  ProDet(
+                    lastPage: physPagesOut.toString(),
+                    pagesRemain: physRemaind(),
+                    style: KDetailsStyle,
+                    totalPages: physTotal().toString(),
+                  ),
+                ],
+              ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
                 child: Row(
@@ -480,11 +493,16 @@ class _MyHomePageState extends State<MyHomePage> {
                   tpercent: bioPercent(),
                 ),
               ),
-              ProDet(
-                  lastPage: bioPagesOut.toString(),
-                  pagesRemain: bioRemaind(),
-                  style: KDetailsStyle,
-                  totalPages: bioTotal().toString()),
+              Row(
+                children: [
+                  ProDet(
+                    lastPage: bioPagesOut.toString(),
+                    pagesRemain: bioRemaind(),
+                    style: KDetailsStyle,
+                    totalPages: bioTotal().toString(),
+                  )
+                ],
+              ),
             ],
           ),
         ),

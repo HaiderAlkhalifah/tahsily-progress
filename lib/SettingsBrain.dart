@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'Const.dart';
-import 'Reuseable.dart';
-import 'BigBrain.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 // to take the first and last page from the user//
