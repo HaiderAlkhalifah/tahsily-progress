@@ -33,42 +33,46 @@ class _SettingsPageState extends State<SettingsPage> {
           ),
         ],
       ),
-      Flexible(
-        child: Row(
-          children: [
-            Flexible(
-              child: TextField(
-                controller: conMathfirstPage,
-                keyboardType: TextInputType.number,
-                obscureText: false,
-                decoration: InputDecoration(
-                  border: new OutlineInputBorder(
-                    borderSide: new BorderSide(color: KTextColor),
+      Row(
+        children: [
+          Flexible(
+            child: Row(
+              children: [
+                Flexible(
+                  child: TextField(
+                    controller: conMathfirstPage,
+                    keyboardType: TextInputType.number,
+                    obscureText: false,
+                    decoration: InputDecoration(
+                      border: new OutlineInputBorder(
+                        borderSide: new BorderSide(color: KTextColor),
+                      ),
+                      labelText: getLang(context, 'First Page'),
+                      labelStyle: KlableTextStyle,
+                    ),
                   ),
-                  labelText: getLang(context, 'First Page'),
-                  labelStyle: KlableTextStyle,
                 ),
-              ),
-            ),
-            SizedBox(
-              width: space2,
-            ),
-            Flexible(
-              child: TextField(
-                controller: conMathlastPage,
-                keyboardType: TextInputType.number,
-                obscureText: false,
-                decoration: InputDecoration(
-                  border: new OutlineInputBorder(
-                    borderSide: new BorderSide(color: KTextColor),
+                SizedBox(
+                  width: space2,
+                ),
+                Flexible(
+                  child: TextField(
+                    controller: conMathlastPage,
+                    keyboardType: TextInputType.number,
+                    obscureText: false,
+                    decoration: InputDecoration(
+                      border: new OutlineInputBorder(
+                        borderSide: new BorderSide(color: KTextColor),
+                      ),
+                      labelText: getLang(context, 'Last pageS'),
+                      labelStyle: KlableTextStyle,
+                    ),
                   ),
-                  labelText: getLang(context, 'Last pageS'),
-                  labelStyle: KlableTextStyle,
                 ),
-              ),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
       SizedBox(
         height: space,
@@ -80,42 +84,46 @@ class _SettingsPageState extends State<SettingsPage> {
           ),
         ],
       ),
-      Flexible(
-        child: Row(
-          children: [
-            Flexible(
-              child: TextField(
-                controller: conChemfirstPage,
-                keyboardType: TextInputType.number,
-                obscureText: false,
-                decoration: InputDecoration(
-                  border: new OutlineInputBorder(
-                    borderSide: new BorderSide(color: KTextColor),
+      Row(
+        children: [
+          Flexible(
+            child: Row(
+              children: [
+                Flexible(
+                  child: TextField(
+                    controller: conChemfirstPage,
+                    keyboardType: TextInputType.number,
+                    obscureText: false,
+                    decoration: InputDecoration(
+                      border: new OutlineInputBorder(
+                        borderSide: new BorderSide(color: KTextColor),
+                      ),
+                      labelText: getLang(context, 'First Page'),
+                      labelStyle: KlableTextStyle,
+                    ),
                   ),
-                  labelText: getLang(context, 'First Page'),
-                  labelStyle: KlableTextStyle,
                 ),
-              ),
-            ),
-            SizedBox(
-              width: space2,
-            ),
-            Flexible(
-              child: TextField(
-                controller: conChemlastPage,
-                keyboardType: TextInputType.number,
-                obscureText: false,
-                decoration: InputDecoration(
-                  border: new OutlineInputBorder(
-                    borderSide: new BorderSide(color: KTextColor),
+                SizedBox(
+                  width: space2,
+                ),
+                Flexible(
+                  child: TextField(
+                    controller: conChemlastPage,
+                    keyboardType: TextInputType.number,
+                    obscureText: false,
+                    decoration: InputDecoration(
+                      border: new OutlineInputBorder(
+                        borderSide: new BorderSide(color: KTextColor),
+                      ),
+                      labelText: getLang(context, 'Last pageS'),
+                      labelStyle: KlableTextStyle,
+                    ),
                   ),
-                  labelText: getLang(context, 'Last pageS'),
-                  labelStyle: KlableTextStyle,
                 ),
-              ),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
       SizedBox(
         height: space,
@@ -127,42 +135,46 @@ class _SettingsPageState extends State<SettingsPage> {
           ),
         ],
       ),
-      Flexible(
-        child: Row(
-          children: [
-            Flexible(
-              child: TextField(
-                controller: conPhysfirstPage,
-                keyboardType: TextInputType.number,
-                obscureText: false,
-                decoration: InputDecoration(
-                  border: new OutlineInputBorder(
-                    borderSide: new BorderSide(color: KTextColor),
+      Row(
+        children: [
+          Flexible(
+            child: Row(
+              children: [
+                Flexible(
+                  child: TextField(
+                    controller: conPhysfirstPage,
+                    keyboardType: TextInputType.number,
+                    obscureText: false,
+                    decoration: InputDecoration(
+                      border: new OutlineInputBorder(
+                        borderSide: new BorderSide(color: KTextColor),
+                      ),
+                      labelText: getLang(context, 'First Page'),
+                      labelStyle: KlableTextStyle,
+                    ),
                   ),
-                  labelText: getLang(context, 'First Page'),
-                  labelStyle: KlableTextStyle,
                 ),
-              ),
-            ),
-            SizedBox(
-              width: space2,
-            ),
-            Flexible(
-              child: TextField(
-                controller: conPhyslastPage,
-                keyboardType: TextInputType.number,
-                obscureText: false,
-                decoration: InputDecoration(
-                  border: new OutlineInputBorder(
-                    borderSide: new BorderSide(color: KTextColor),
+                SizedBox(
+                  width: space2,
+                ),
+                Flexible(
+                  child: TextField(
+                    controller: conPhyslastPage,
+                    keyboardType: TextInputType.number,
+                    obscureText: false,
+                    decoration: InputDecoration(
+                      border: new OutlineInputBorder(
+                        borderSide: new BorderSide(color: KTextColor),
+                      ),
+                      labelText: getLang(context, 'Last pageS'),
+                      labelStyle: KlableTextStyle,
+                    ),
                   ),
-                  labelText: getLang(context, 'Last pageS'),
-                  labelStyle: KlableTextStyle,
                 ),
-              ),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
       SizedBox(
         height: space,
@@ -174,42 +186,46 @@ class _SettingsPageState extends State<SettingsPage> {
           ),
         ],
       ),
-      Flexible(
-        child: Row(
-          children: [
-            Flexible(
-              child: TextField(
-                controller: conBiofirstPage,
-                keyboardType: TextInputType.number,
-                obscureText: false,
-                decoration: InputDecoration(
-                  border: new OutlineInputBorder(
-                    borderSide: new BorderSide(color: KTextColor),
+      Row(
+        children: [
+          Flexible(
+            child: Row(
+              children: [
+                Flexible(
+                  child: TextField(
+                    controller: conBiofirstPage,
+                    keyboardType: TextInputType.number,
+                    obscureText: false,
+                    decoration: InputDecoration(
+                      border: new OutlineInputBorder(
+                        borderSide: new BorderSide(color: KTextColor),
+                      ),
+                      labelText: getLang(context, 'First Page'),
+                      labelStyle: KlableTextStyle,
+                    ),
                   ),
-                  labelText: getLang(context, 'First Page'),
-                  labelStyle: KlableTextStyle,
                 ),
-              ),
-            ),
-            SizedBox(
-              width: space2,
-            ),
-            Flexible(
-              child: TextField(
-                controller: conBiolastPage,
-                keyboardType: TextInputType.number,
-                obscureText: false,
-                decoration: InputDecoration(
-                  border: new OutlineInputBorder(
-                    borderSide: new BorderSide(color: KTextColor),
+                SizedBox(
+                  width: space2,
+                ),
+                Flexible(
+                  child: TextField(
+                    controller: conBiolastPage,
+                    keyboardType: TextInputType.number,
+                    obscureText: false,
+                    decoration: InputDecoration(
+                      border: new OutlineInputBorder(
+                        borderSide: new BorderSide(color: KTextColor),
+                      ),
+                      labelText: getLang(context, 'Last pageS'),
+                      labelStyle: KlableTextStyle,
+                    ),
                   ),
-                  labelText: getLang(context, 'Last pageS'),
-                  labelStyle: KlableTextStyle,
                 ),
-              ),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
       Expanded(
         child: BottomButton(
