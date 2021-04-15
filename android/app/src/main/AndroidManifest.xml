@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.haider.tahsily_progress">
    <application
-        android:label="tahsily_progress"
+        android:label="Tahsily progress"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
