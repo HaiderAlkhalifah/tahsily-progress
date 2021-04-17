@@ -5,6 +5,7 @@ import 'AppLocale.dart';
 import 'HomePage.dart';
 import 'BigBrain.dart';
 import 'SettingsBrain.dart';
+import 'IntroPage.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -47,7 +48,7 @@ class MyApp extends StatelessWidget {
           primaryColor: Color(0xFF22252A),
           accentColor: Color(0xFF2288FF),
           dialogBackgroundColor: KMainCardColor),
-      home: MyHomePage(),
+      home: IntroPage(),
       localizationsDelegates: [
         AppLocale.delegate,
         GlobalMaterialLocalizations.delegate,

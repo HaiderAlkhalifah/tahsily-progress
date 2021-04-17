@@ -50,3 +50,15 @@ const KlableTextStyle = TextStyle(
   color: Colors.grey,
   fontFamily: 'cairo',
 );
+
+const KTermsStyle = TextStyle(
+  fontSize: 14.0,
+  color: KBluetColor,
+  fontFamily: 'cairo',
+);
+
+const KJTermsStyle = TextStyle(
+  fontSize: 14.0,
+  color: KTextColor,
+  fontFamily: 'cairo',
+);
