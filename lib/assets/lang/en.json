@@ -17,8 +17,13 @@
     "First Page":"First Page",
     "Save changes": "Save changes",
     "less than 1 Erorr": "The nunber of the page can't be less than 1",
-"than the first page Erorr": "The last page number should be bigger than the first page",
-"Settings changed successfully": "Settings changed successfully",
-"Last pageS" : "Last page"
-
+    "than the first page Erorr": "The last page number should be bigger than the first page",
+    "Settings changed successfully": "Settings changed successfully",
+    "Last pageS" : "Last page",
+    "Are you ready to start?" : "Are you ready to start?",
+    "Lets Go": "Let's Go",
+    "Welcome!": "Welcome!",
+    "welcomeS": "Do you want to track your Tahsily study progress, So you are in the right place",
+    "by using":"by using this application, you agree to our ",
+    "Terms of Use":"Terms of Use"
 }

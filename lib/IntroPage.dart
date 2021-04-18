@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
+import 'package:tahsily_progress/AppLocale.dart';
 import 'Const.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'SettingsBrain.dart';
@@ -13,10 +14,18 @@ class IntroPage extends StatelessWidget {
           globalBackgroundColor: KBackgroundColor,
           pages: [
             PageViewModel(
-              title: "Welcome to our app",
-              body: 'you are in the right place',
+              titleWidget: Text(
+                getLang(context, "Welcome!"),
+                style: KMainTextStyle,
+              ),
+              bodyWidget: Center(
+                child: Text(
+                  getLang(context, "welcomeS"),
+                  style: KDetailsStyle,
+                ),
+              ),
               image: Padding(
-                padding: const EdgeInsets.all(60),
+                padding: const EdgeInsets.all(30),
                 child: Center(
                   child: Image.asset(
                     "lib/assets/images/Welcome-amico.png",
@@ -25,13 +34,16 @@ class IntroPage extends StatelessWidget {
               ),
             ),
             PageViewModel(
-              title: "Are you ready to start?",
+              titleWidget: (Text(
+               getLang(context, "Are you ready to start?"),
+                style: KMainTextStyle,
+              )),
               bodyWidget: Center(
                 child: ConstrainedBox(
                   constraints: BoxConstraints.tightFor(width: 160, height: 50),
                   child: ElevatedButton(
                     child: Text(
-                      "Let's Go!",
+                      getLang(context, "Lets Go"),
                       style: KLetsGo,
                     ),
                     onPressed: () {
@@ -46,10 +58,10 @@ class IntroPage extends StatelessWidget {
                   children: [
                     TextSpan(
                         style: KJTermsStyle,
-                        text: "by using this application, you agree to our "),
+                        text: getLang(context, "by using")),
                     TextSpan(
                       style: KTermsStyle,
-                      text: "Terms of Use",
+                      text: getLang(context, "Terms of Use"),
                       recognizer: TapGestureRecognizer()
                         ..onTap = () async {
                           var url =

@@ -27,7 +27,7 @@ const KBoldNumberStyle = TextStyle(
 );
 
 const KDetailsStyle = TextStyle(
-  fontSize: 23.0,
+  fontSize: 21.0,
   color: KTextColor,
   fontWeight: FontWeight.w200,
   fontFamily: 'cairo',
