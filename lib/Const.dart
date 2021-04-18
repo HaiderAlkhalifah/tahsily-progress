@@ -62,3 +62,10 @@ const KJTermsStyle = TextStyle(
   color: KTextColor,
   fontFamily: 'cairo',
 );
+
+const KLetsGo = TextStyle(
+  fontSize: 22.0,
+  color: KTextColor,
+  fontFamily: 'cairo',
+  fontWeight: FontWeight.bold,
+);

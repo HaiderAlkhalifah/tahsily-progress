@@ -6,6 +6,7 @@ import 'BigBrain.dart';
 import 'package:tahsily_progress/SettingsPage.Dart';
 import 'SettingsBrain.dart';
 import 'AppLocale.dart';
+import 'IntroPage.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -34,6 +35,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    if (StartUpPref().hasGone == false) {
+      Future.delayed(Duration.zero, () {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => IntroPage()));
+      });
+    }
+
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.fromLTRB(10, 10, 10, 5),

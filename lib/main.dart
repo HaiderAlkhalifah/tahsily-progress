@@ -5,11 +5,11 @@ import 'AppLocale.dart';
 import 'HomePage.dart';
 import 'BigBrain.dart';
 import 'SettingsBrain.dart';
-import 'IntroPage.dart';
+import 'package:flutter/widgets.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
+  await StartUpPref().init();
   await UserPreferences().init();
   await Chemprefs().init();
   await Physprefs().init();
@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
           primaryColor: Color(0xFF22252A),
           accentColor: Color(0xFF2288FF),
           dialogBackgroundColor: KMainCardColor),
-      home: IntroPage(),
+      home: MyHomePage(),
       localizationsDelegates: [
         AppLocale.delegate,
         GlobalMaterialLocalizations.delegate,

@@ -266,3 +266,31 @@ class BiolastPrefs {
     return _prefs.setString('BioEToken', value);
   }
 }
+
+
+
+
+class StartUpPref {
+  static final StartUpPref _instance = StartUpPref._ctor();
+  factory StartUpPref() {
+    return _instance;
+  }
+
+  StartUpPref._ctor();
+
+  SharedPreferences _prefs;
+
+  init() async {
+    _prefs = await SharedPreferences.getInstance();
+  }
+
+  get hasGone {
+    return _prefs.getBool('hasGone') ?? false;
+  }
+
+  set hasGone(bool value) {
+    _prefs.setBool('hasGone', value);
+  }
+
+}
+
