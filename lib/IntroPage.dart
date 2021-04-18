@@ -22,6 +22,7 @@ class IntroPage extends StatelessWidget {
                 child: Text(
                   getLang(context, "welcomeS"),
                   style: KDetailsStyle,
+                  textAlign: TextAlign.center,
                 ),
               ),
               image: Padding(
@@ -35,7 +36,7 @@ class IntroPage extends StatelessWidget {
             ),
             PageViewModel(
               titleWidget: (Text(
-               getLang(context, "Are you ready to start?"),
+                getLang(context, "Are you ready to start?"),
                 style: KMainTextStyle,
               )),
               bodyWidget: Center(
