@@ -5,6 +5,7 @@ import 'Const.dart';
 import 'Reuseable.dart';
 import 'BigBrain.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 double space = 20;
 double space2 = 40;
@@ -22,12 +23,49 @@ class SettingsPage extends StatefulWidget {
   _SettingsPageState createState() => _SettingsPageState();
 }
 
+String _launchUrl =
+    'https://github.com/HaiderAlkhalifah/Tahsily-Progress-/wiki#how-to-use';
+
+Future<void> _launchInBrowser(String url) async {
+  if (await canLaunch(url)) {
+    await launch(
+      url,
+      forceSafariVC: false,
+      forceWebView: false,
+      headers: <String, String>{'header_key': 'header_value'},
+    );
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
 class _SettingsPageState extends State<SettingsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(getLang(context, 'Settings')),
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              getLang(context, 'Settings'),
+              style: KTotalDetailsStyle,
+            ),
+            IconButton(
+                icon: Icon(
+                  Icons.info_outline_rounded,
+                  color: KTextColor,
+                  size: 30,
+                ),
+                onPressed: () {
+                  setState(() {
+                    _launchInBrowser(_launchUrl);
+                  });
+                }),
+          ],
+        ),
+        centerTitle: true,
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10),
