@@ -1,16 +1,11 @@
-# tahsily_progress
+# Welcome to Tahsily-Progress
 
-A new Flutter application.
+![image unavailable](https://play-lh.googleusercontent.com/qAS6hJnIrRGZJrRX0iDyreMxxRVem0gbid5aY-SXfRI4Q-bC8lzud7vldqz9GfJ1JMiv=s180-rw)
 
-## Getting Started
+This app allows you to track your Tahsily study progress.
 
-This project is a starting point for a Flutter application.
+Currently available on the Play store.
 
-A few resources to get you started if this is your first Flutter project:
+<a href="https://play.google.com/store/apps/details?id=com.haider.tahsily_progress" ><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" height="80px"/></a>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Also if you don't have an Android device or you prefer using a browser, we have [Hadi](https://github.com/hadialqattan)'s [tahsily-progress-calculator](https://github.com/hadialqattan/tahsily-progress-calculator) website.
